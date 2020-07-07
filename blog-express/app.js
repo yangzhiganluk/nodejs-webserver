@@ -1,6 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+let fs = require('fs')
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 let session = require('express-session')
@@ -16,8 +17,22 @@ var app = express();
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');
+const env = process.env.NODE_ENV
+console.log(env)
+if (env == 'dev') {
+  // 开发环境 / 测试环境
+  app.use(logger('dev'));
+} else {
+  // 线上环境
+  const logFileName = path.join(__dirname, 'logs', 'access.log')
+  const writeStream = fs.createWriteStream(logFileName, {
+    flags: 'a'
+  })
+  app.use(logger('combined', {
+    stream: writeStream
+  }))
+}
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -55,11 +70,11 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  // res.render('error');
-  res.json({
-      message: err.message,
-      error: err
-  });
+  res.render('error');
+  // res.json({
+  //     message: err.message,
+  //     error: err
+  // });
 });
 
 module.exports = app;

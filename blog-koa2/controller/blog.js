@@ -32,8 +32,8 @@ const newBlog = async (blogData = {}) => {
     const sql = `insert into blogs (title, content, createtime, author)
      values (${title}, ${content}, ${createtime}, ${author});`
     
-    const insertData = await exec(sql)
-    return {
+    const insertData = await exec(sql) 
+    return  {
         id: insertData.insertId
     }
 }
@@ -46,7 +46,6 @@ const updateBlog = async (id, blogData = {}) => {
     title = xss(escape(title))
     content = xss(escape(content))
     const sql = `update blogs set title=${title}, content=${content} where id=${id};`
-
     const updateData = await exec(sql)
     if (updateData.affectedRows > 0) {
         return true
@@ -59,13 +58,12 @@ const delBlog = async (id, author) => {
     author = escape(author)
     // id 就是要删除博客的id
     const sql = `delete from blogs where id=${id} and author=${author}`;
-    
+
     const delData = await exec(sql)
     if (delData.affectedRows > 0) {
         return true
     }
     return false
-
 }
 
 module.exports = {

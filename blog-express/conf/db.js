@@ -17,7 +17,7 @@
     }
     REDIS_CONF = {
         port: 6379,
-        localhost: '127.0.0.1'
+        host: '127.0.0.1'
     }
  }
 
@@ -25,13 +25,13 @@
     MYSQL_CONF = {
         host: 'localhost',
         user: 'root',
-        password: '123',
+        password: '123456',
         port: '3306',
         database: 'myblog'
     }
     REDIS_CONF = {
         port: 6379,
-        localhost: '127.0.0.1'
+        host: '127.0.0.1'
     }
  }
 

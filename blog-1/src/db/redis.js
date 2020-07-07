@@ -34,7 +34,7 @@ function get(key) {
             //try, catch 兼容 json 转换的格式， 如果是 json 格式，直接返回一个 json 对象，如果不是 json，直接返回
             try {
                 resolve(JSON.parse(val))
-            } catch (ex) {
+            } catch (err) {
                 resolve(val)
             }
         })

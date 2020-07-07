@@ -1,0 +1,25 @@
+2020-07-07 16:07:27: TypeError: console.err is not a function
+2020-07-07 16:07:27:     at Server.<anonymous> (E:\sprinting\code-demo\pm2-test\index.js:5:13)
+2020-07-07 16:07:27:     at Server.emit (events.js:311:20)
+2020-07-07 16:07:27:     at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+2020-07-07 16:07:27:     at parserOnIncoming (_http_server.js:784:12)
+2020-07-07 16:07:27:     at HTTPParser.parserOnHeadersComplete (_http_common.js:119:17)
+2020-07-07 16:07:28: TypeError: console.err is not a function
+2020-07-07 16:07:28:     at Server.<anonymous> (E:\sprinting\code-demo\pm2-test\index.js:5:13)
+2020-07-07 16:07:28:     at Server.emit (events.js:311:20)
+2020-07-07 16:07:28:     at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+2020-07-07 16:07:28:     at parserOnIncoming (_http_server.js:784:12)
+2020-07-07 16:07:28:     at HTTPParser.parserOnHeadersComplete (_http_common.js:119:17)
+2020-07-07 16:07:34: TypeError: console.err is not a function
+2020-07-07 16:07:34:     at Server.<anonymous> (E:\sprinting\code-demo\pm2-test\index.js:5:13)
+2020-07-07 16:07:34:     at Server.emit (events.js:311:20)
+2020-07-07 16:07:34:     at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+2020-07-07 16:07:34:     at parserOnIncoming (_http_server.js:784:12)
+2020-07-07 16:07:34:     at HTTPParser.parserOnHeadersComplete (_http_common.js:119:17)
+2020-07-07 16:07:36: TypeError: console.err is not a function
+2020-07-07 16:07:36:     at Server.<anonymous> (E:\sprinting\code-demo\pm2-test\index.js:5:13)
+2020-07-07 16:07:36:     at Server.emit (events.js:311:20)
+2020-07-07 16:07:36:     at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+2020-07-07 16:07:36:     at parserOnIncoming (_http_server.js:784:12)
+2020-07-07 16:07:36:     at HTTPParser.parserOnHeadersComplete (_http_common.js:119:17)
+2020-07-07 16:07:51: 假装出错 1594109271705

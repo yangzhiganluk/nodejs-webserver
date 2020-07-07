@@ -17,7 +17,7 @@
     }
     REDIS_CONF = {
         port: 6379,
-        localhost: '127.0.0.1'
+        host: '127.0.0.1'
     }
  }
 
@@ -31,7 +31,7 @@
     }
     REDIS_CONF = {
         port: 6379,
-        localhost: '127.0.0.1'
+        host: '127.0.0.1'
     }
  }
 
